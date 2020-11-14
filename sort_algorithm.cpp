@@ -32,7 +32,7 @@ void insert_sort(int arr[], int len) {
         tmp = arr[i];
         for (j = i; j > 0 && arr[j - 1] > tmp;j--)
             arr[j] = arr[j - 1];
-        arr[j] = tmp;      //这条语句的j是上条语句的j-1     
+        arr[j] = tmp;      //杩欐潯璇彞鐨刯鏄笂鏉¤鍙ョ殑j-1     
         }
 }
 void shell_sort(int arr[],int len) {
@@ -42,7 +42,7 @@ void shell_sort(int arr[],int len) {
             int tmp = arr[i];
             for (j = i - increment; j >= 0 && arr[j] > arr[i]; j -= increment)
                 arr[j + increment] = arr[j];
-            arr[j + increment] = tmp;   //这条语句的j是上条语句的j-increment
+            arr[j + increment] = tmp;   //杩欐潯璇彞鐨刯鏄笂鏉¤鍙ョ殑j-increment
         }
         }
 }
